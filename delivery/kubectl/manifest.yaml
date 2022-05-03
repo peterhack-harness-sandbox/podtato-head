@@ -46,9 +46,9 @@ spec:
     port: 9000
     protocol: TCP
     targetPort: 9000
-  type: LoadBalancer
+  # type: LoadBalancer
   # change to NodePort if no LoadBalancer controller is available
-  # type: NodePort
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: Deployment
